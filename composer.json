@@ -13,9 +13,8 @@
     },
 
     "autoload": {
-        "classmap": [
-            "include/",
-            "lib/"
-        ]
+        "psr-4": {                    
+            "app\\": "lib/"
+        }
     }
 }
