@@ -1,1 +1,3 @@
 vendor/*
+public/*
+src/web/node_modules/*
