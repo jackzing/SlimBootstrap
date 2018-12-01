@@ -25,5 +25,9 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "@getbase/animations": "^4.0.0",
+    "@getbase/grid": "^4.0.2"
   }
 }
