@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="/public/css/style.min.css" />
+</head>
+<body>
+    <div class="screen aboutus">
+       <div class="header jarallax banner">
+            <div class="content">
+                 {% include 'common/header.twig' %}
+             </div>
+        </div>
+         {% include 'aboutus/content.twig' %}
+    </div>
+        
+{% include 'common/footer.twig' %}
+
+<script type="text/javascript" src="/public/js/vendor.min.js"></script>
+<script type="text/javascript" src="/public/js/index.min.js"></script>
+</body>	
+</html>

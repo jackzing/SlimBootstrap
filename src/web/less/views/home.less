@@ -1,0 +1,117 @@
+div.services {
+    .wthree_head {
+        position: relative;
+        font-size: 2em;
+        font-weight: 600;
+        color: #212121;
+        text-align: center;
+        padding-bottom: .8em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: .5em;
+    }
+    .wthree_head:before {
+        width: 11%;
+        bottom: 8%;
+        left: 44.5%;
+    }
+
+    .wthree_head:after {
+        width: 18%;
+        right: 41%;
+        bottom: 0%;
+    }
+    .wthree_head:before, .wthree_head:after {
+        position: absolute;
+        background: #fb5710;
+        height: 2px;
+        content: '';
+    }
+
+    .mcc_para {
+        text-align: center;
+        color: #777;
+        line-height: 2em;
+    }
+    .services_grids {
+        margin-top: 4em;
+        .services_right {
+            text-align: center;
+        }
+        .services_left_gridr {
+            h4 {
+                font-size: 1.1em;
+                color: #fb5710;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p {
+                margin: 1em 0 0;
+                color: #999;
+                line-height: 2em;
+            }
+        }
+        .services_left_gridl {
+            .mc-icon {
+                display: inline-block;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                color: #fb5710;
+                background-image: url(/public/images/sprites.png);
+                background-size: 250px;
+                background-repeat: no-repeat;
+                background-position: 0 8px;
+            }
+
+            .mc-icon:before {
+                content:"";
+                speak: none;
+                font-size: 2em;
+                line-height: 2.7em;
+                font-style: normal;
+                font-variant: normal;
+                text-transform: none;
+                display: block;
+                -webkit-font-smoothing: antialiased;
+            }
+            .mc-icon:after {
+                pointer-events: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                content: '';
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+                top: 0;
+                left: 0;
+                padding: 0;
+                box-shadow: 0 0 0 3px #e4e4e4;
+                -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+                -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+                transition: transform 0.2s, opacity 0.2s;
+            }
+            .mc-icon.fas.fa-plug {
+                background-position: -87px 1px;
+            }
+            .mc-icon.fas.fa-power-off {
+                background-position: 7px -78px;
+            }
+        }
+    }
+}
+.screen.home {
+    .banner {
+        background:url('@{imgpath}/1.jpg?v=@time') no-repeat;
+        background-size: cover;
+        min-height: 750px;
+    }
+}

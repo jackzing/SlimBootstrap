@@ -1,2 +1,60 @@
-hello,world!!
-{{text}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="/public/css/style.min.css" />
+</head>
+<body>
+    <div class="screen home">
+        <div class="header jarallax banner">
+            <div class="content">
+
+            {% include 'common/header.twig' %}
+
+            <div class="container container-banner">
+                <div class="flexslider">
+                  <ul class="slides">
+                     
+                     {# for banner in banners #}
+                     <li>
+                        <img src="{#banner#}" alt="" />
+                     </li>
+                     {# endfor #}
+                      <li>
+                          <div class="agileits_w3layouts_banner_info">
+                          <h3>Electrical & Mechanical Services </h3>
+                          <p>Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                          </div>
+                      </li>
+                        <li>
+                            <div class="agileits_w3layouts_banner_info">
+                                <h3>Safety In The Home</h3>
+                                <p>Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="agileits_w3layouts_banner_info">
+                                <h3>Tools & Specialist Equipment</h3>
+                                <p>Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </li>
+                  </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        {% include 'home/service.twig' %}
+        <div class="container container-service jarallax"></div>
+        <div class="container container-supply jarallax"></div>
+        <div class="container container-team jarallax"></div>
+        <div class="container container-data jarallax"></div>
+        
+{% include 'common/footer.twig' %}
+
+<script type="text/javascript" src="/public/js/vendor.min.js"></script>
+<script type="text/javascript" src="/public/js/index.min.js"></script>
+</body>	
+</html>

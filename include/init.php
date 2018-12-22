@@ -1,11 +1,13 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use app\base\Util; 
 // depedency injection container
 $container = require __DIR__ . '/services.php';
 
 // sane runtime environment
 $config = $container['config'];
+
 error_reporting($config['php.error_reporting']);
 ini_set('display_errors', $config['php.display_errors']);
 ini_set('log_errors', $config['php.log_errors']);

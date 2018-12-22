@@ -1,13 +1,24 @@
 @import "./common/common.less";
 @import "./common/function.less";
 @import "./common/reset.less";
-@import "./views/main.less";
 
+@import "./common/table.less";
 
 /* Import Base Grid */
-@import "node_modules/@getbase/grid/scss/index";
-@import "node_modules/@getbase/animations/scss/index";
+@import "./getbase/base.css";
+@import "./getbase/grid.css";
+@import "./getbase/containers.css";
+@import "./getbase/animations.css";
 
-/* Your Other Styles */
-@import "main"
+@import "./lib/fontawesome.css";
 
+//view
+@import "./views/home.less";
+@import "./views/aboutus.less";
+@import "./views/list.less";
+@import "./views/contact.less";
+
+@import "./flexslider.css";
+
+@import "./common/footer.less";
+@import "./common/header.less";

@@ -5,29 +5,43 @@
   "author": "zhangliang@baofeng.com",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config ./build/webpack.dev.config.js",
-    "build": "webpack --config ./build/webpack.prod.config.js"
+    "build": "webpack --config ./build/webpack.prod.config.js --watch"
   },
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^7.1.1",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.3.2",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.22.0",
-    "css-loader": "^0.28.9",
+    "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.11",
+    "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "jquery": "^3.3.1",
-    "less": "^3.0.1",
+    "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "style-loader": "^0.20.1",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1",
-    "webpack-merge": "^4.1.1"
+    "mini-css-extract-plugin": "^0.4.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   },
   "dependencies": {
     "@getbase/animations": "^4.0.0",
-    "@getbase/grid": "^4.0.2"
+    "@getbase/containers": "^4.0.1",
+    "@getbase/grid": "^4.0.2",
+    "ajv": "^6.6.1",
+    "babel-preset-react": "^6.24.1",
+    "flexslider": "^2.7.1",
+    "jarallax": "^1.10.6",
+    "jquery-bridget": "^2.0.1",
+    "masonry-layout": "^4.2.2"
   }
 }

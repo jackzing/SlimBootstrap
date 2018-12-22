@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="/public/css/style.min.css" />
+</head>
+<body>
+    <div class="screen contact">
+       <div class="header jarallax banner">
+            <div class="content">
+                 {% include 'common/header.twig' %}
+             </div>
+        </div>
+         {% include 'contact/content.twig' %}
+         <div class="container google-form">
+         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCgRs3qEVUzRpSvtti3OJI39DxbUIiCGJsEtBSEf7W-nhT4A/viewform?embedded=true" width="auto" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+         </div>
+    </div>
+        
+{% include 'common/footer.twig' %}
+
+<script type="text/javascript" src="/public/js/vendor.min.js"></script>
+<script type="text/javascript" src="/public/js/index.min.js"></script>
+</body>	
+</html>

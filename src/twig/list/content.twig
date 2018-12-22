@@ -1,0 +1,24 @@
+<div class="content">
+    <div class="heading_section">
+        <h3 class="wthree_head">Product</h3>
+        <p class="mcc_para">
+    MCC Trading Co., Ltd. specialises in the manufacturing and export of Industrial Fasteners and OEM products.
+       </p>
+    </div>
+
+    <div class="container grid-container masonry">
+        {% for prod in products %}
+            <div class="prod grid-item">
+                <a href="" />
+                <div class="grid">
+                    <img src="{{prod.url}}" /> 
+                    <div class="tips">
+                            <h3>Mcc Trading</h3>
+                            <p>{{prod.title}}</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        {% endfor %}
+   </div>
+</div>
