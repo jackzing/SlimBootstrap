@@ -1,3 +1,4 @@
 vendor/*
 public/*
+!public/images
 src/web/node_modules/*

@@ -1,7 +1,8 @@
 <?php
 $basedir = __DIR__ . '/../';
+$site = require(__DIR__ . "/site.php");
 
-return array(
+return array_merge($site, array(
 // Environment
     'php.error_reporting' => E_ALL,
     'php.display_errors'  => true,
@@ -10,16 +11,19 @@ return array(
     'php.date.timezone'   => 'America/New_York',
 
 // SQLite
-    'db.dsn'              => 'sqlite:' . $basedir . 'db/sqlite.db',
+//    'db.dsn'              => 'sqlite:' . $basedir . 'db/sqlite.db',
 
 // MySQL
-/*
-    'db.dsn'              => 'mysql:host=localhost;dbname=test',
-    'db.username'         => 'dbuser',
-    'db.password'         => 'dbpass',
-*/
+    'db.dsn'              => 'mysql:host=localhost;dbname=mcc_trading',
+    'db.username'         => 'root',
+    'db.password'         => 'fangjian',
 
 // Application paths
     'path.routes'         => $basedir . 'routes/',
-    'path.templates'      => $basedir . 'templates/'
-);
+    'path.templates'      => $basedir . 'templates/',
+    'twig.dir'            => $basedir . 'src/twig/',
+    'debug'               => true,
+
+    'img.prod.path'            => "/public/images/prod/",
+    'img.banner.path'            => "/public/images/banner/",
+));
